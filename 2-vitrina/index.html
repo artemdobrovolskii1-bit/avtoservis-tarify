@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Светлый Бокс — автосервис: ремонт с фото и ценой до начала работ</title>
+<meta name="description" content="Автосервис: ТО, диагностика, двигатель, ходовая, тормоза, развал-схождение. Пакеты с фиксированной ценой, фотоотчёт в мессенджер, гарантия 12 месяцев.">
+<meta property="og:title" content="Светлый Бокс — ремонт с фото и ценой до начала работ">
+<meta property="og:description" content="Готовые пакеты ТО с ценой, фото неисправности до ремонта, запись онлайн, гарантия 12 месяцев или 20 000 км.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/1727893119356.jpg">
+<link href="fonts/fonts.css" rel="stylesheet">
+<!-- Яндекс Метрика: вставьте сюда код счётчика клиента -->
+<style>
+:root{--bg:#f4f6f3;--bg2:#e8eee9;--card:#ffffff;--ink:#14201c;--mute:#5a6a63;--acc:#0b7d5f;--acc-ink:#ffffff;--line:#d3dcd6;--warn:#b76a0a;--wa:#177f44;--tg:#1d76b0;--r:16px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Onest,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img{max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;font-weight:800;line-height:1.12;letter-spacing:-.02em}
+h1{font-size:clamp(2rem,6.4vw,3.6rem)}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:12px}
+h3{font-size:1.1rem;line-height:1.25}
+p{margin:0}
+.mono,.pr{font-family:"JetBrains Mono",ui-monospace,Consolas,monospace;font-variant-numeric:tabular-nums}
+.wr{max-width:1160px;margin:0 auto;padding:0 20px}
+.sec{padding:52px 0}
+.sec.alt{background:var(--bg2)}
+.tag{display:inline-block;color:var(--acc);font-weight:700;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.lead{color:var(--mute);max-width:64ch;margin-bottom:26px}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 22px;border-radius:12px;border:2px solid var(--acc);font-family:inherit;font-weight:700;font-size:1rem;line-height:1.2;text-decoration:none;cursor:pointer;background:var(--acc);color:var(--acc-ink);transition:transform .2s,filter .2s,box-shadow .2s}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 8px 18px -10px rgba(20,32,28,.5)}
+.btn.line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.wa{background:var(--wa);border-color:var(--wa);color:#fff}
+.btn.tg{background:var(--tg);border-color:var(--tg);color:#fff}
+.btn.sm{min-height:40px;padding:8px 14px;font-size:.92rem;border-radius:10px}
+.btn svg,.fl svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* шапка */
+.nav{position:sticky;top:0;z-index:40;background:rgba(244,246,243,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wr{display:flex;align-items:center;gap:14px;min-height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;text-decoration:none;white-space:nowrap}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--acc);display:grid;place-items:center}
+.logo i svg{width:20px;height:20px;fill:none;stroke:var(--acc-ink);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.menu{display:none;margin-left:auto;gap:2px;align-items:center}
+.menu a{padding:8px 10px;border-radius:9px;text-decoration:none;font-weight:600;font-size:.93rem}
+.menu a:hover{background:var(--bg2)}
+.tel{margin-left:auto;font-weight:800;text-decoration:none;white-space:nowrap;text-align:right;line-height:1.2}
+.tel small{display:block;font-weight:600;color:var(--mute);font-size:.72rem;font-family:Onest,system-ui,sans-serif}
+.burger{width:46px;height:46px;border:1px solid var(--line);border-radius:12px;background:var(--card);display:grid;place-items:center;cursor:pointer;padding:0;color:var(--ink);flex:none}
+.burger svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round}
+.mm{display:none;border-top:1px solid var(--line);background:var(--bg);padding:8px 20px 16px}
+.mm.on{display:block}
+.mm a{display:block;padding:12px 4px;border-bottom:1px solid var(--line);text-decoration:none;font-weight:600}
+@media(max-width:480px){.tel small{display:none}.logo{font-size:1rem}.nav .wr{gap:10px}}
+@media(max-width:440px){.nav .tel{display:none}.burger{margin-left:auto}}
+
+/* первый экран */
+.hero{padding:30px 0 44px}
+.hero .wr{display:grid;gap:28px;align-items:center}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero p.sub{color:var(--mute);font-size:1.08rem;margin:16px 0 24px;max-width:48ch}
+.pic{position:relative;border-radius:22px;overflow:hidden;background:var(--bg2);aspect-ratio:4/3.2}
+.pic img,.pic .ph{width:100%;height:100%;object-fit:cover;display:block}
+.pic .bd2{position:absolute;left:14px;bottom:14px;background:var(--card);border-radius:14px;padding:10px 14px;box-shadow:0 10px 24px -12px rgba(20,32,28,.5);font-size:.85rem;line-height:1.3}
+.pic .bd2 b{display:block;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:1.05rem;color:var(--acc)}
+.pic .bd3{position:absolute;right:14px;top:14px;background:var(--ink);color:var(--bg);border-radius:12px;padding:8px 12px;font-size:.82rem;line-height:1.25}
+.pic .bd3 b{color:#ffd166;font-size:1rem}
+.open{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.9rem;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;margin-bottom:16px}
+.open::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--mute)}
+.open.on::before{background:var(--acc);box-shadow:0 0 0 4px rgba(11,125,95,.2)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{font-size:.85rem;font-weight:600;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px}
+
+/* цифры, карточки */
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.num{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.num b{display:block;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:clamp(1.5rem,5vw,2.2rem);color:var(--acc);line-height:1.1;font-weight:600}
+.num span{color:var(--mute);font-size:.92rem;display:block;margin-top:4px}
+.cards{display:grid;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:8px}
+.card p{color:var(--mute);font-size:.95rem}
+.bd{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--acc);color:var(--acc-ink);align-self:flex-start}
+.bd.new{background:var(--ink)}.bd.sale{background:var(--warn)}
+
+/* пакеты */
+.pk ul{margin:4px 0 6px;padding:0;list-style:none;display:grid;gap:5px;font-size:.93rem}
+.pk li{padding-left:24px;position:relative}
+.pk li::before{content:"";position:absolute;left:2px;top:.55em;width:12px;height:7px;border-left:2.5px solid var(--acc);border-bottom:2.5px solid var(--acc);transform:rotate(-45deg)}
+.pk .pr{font-size:1.45rem;font-weight:600;margin-top:auto}
+.pk .pr small{font-family:Onest,system-ui,sans-serif;font-size:.82rem;color:var(--mute);font-weight:400}
+.pk .old{text-decoration:line-through;color:var(--mute);font-size:.95rem;margin-left:6px;font-weight:400}
+.pk .btn{margin-top:6px}
+.pk .tm{font-size:.85rem;color:var(--mute)}
+
+/* прайс */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:16px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;min-height:42px;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);font:inherit;font-weight:600;color:var(--ink);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.price{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.price table{width:100%;border-collapse:collapse}
+.price td{padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.price tr:last-child td{border-bottom:0}
+.price td:last-child{text-align:right;white-space:nowrap;font-family:"JetBrains Mono",monospace;font-weight:600}
+.price td small{display:block;color:var(--mute);font-size:.82rem}
+.price [hidden]{display:none}
+
+/* калькулятор */
+.calc{display:grid;gap:20px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px}
+.seg{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 18px}
+.seg label{cursor:pointer}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:inline-block;padding:9px 15px;border-radius:12px;border:1.5px solid var(--line);font-weight:600;font-size:.93rem}
+.seg input:checked+span{border-color:var(--acc);background:rgba(11,125,95,.08);color:var(--acc)}
+.seg input:focus-visible+span{outline:3px solid var(--acc);outline-offset:2px}
+.chk{display:grid;gap:8px}
+.chk label{display:flex;gap:12px;align-items:center;padding:11px 14px;border:1.5px solid var(--line);border-radius:12px;cursor:pointer;font-weight:500}
+.chk label:has(input:checked){border-color:var(--acc);background:rgba(11,125,95,.06)}
+.chk input{width:20px;height:20px;accent-color:var(--acc);flex:none}
+.chk b{margin-left:auto;font-family:"JetBrains Mono",monospace;font-weight:600;white-space:nowrap}
+.sum{background:var(--bg2);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px;align-self:start}
+.sum .total{font-family:"JetBrains Mono",monospace;font-size:clamp(1.8rem,6vw,2.4rem);font-weight:600;color:var(--acc);line-height:1.1}
+.sum ul{margin:0;padding-left:18px;color:var(--mute);font-size:.92rem}
+
+/* фотоотчёт */
+.rep{display:grid;gap:24px;align-items:center}
+.chat{background:#e5ddd5;border-radius:22px;padding:18px;display:grid;gap:10px;max-width:440px;width:100%;justify-self:center;box-shadow:0 18px 40px -24px rgba(20,32,28,.6)}
+.msg{background:#fff;border-radius:4px 14px 14px 14px;padding:8px;max-width:88%;font-size:.92rem;line-height:1.45;box-shadow:0 1px 1px rgba(0,0,0,.08)}
+.msg.me{justify-self:end;background:#dcf8c6;border-radius:14px 4px 14px 14px;padding:8px 12px}
+.msg img,.msg .ph{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px;display:block;margin-bottom:6px}
+.msg p{padding:0 4px}
+.msg .t{display:block;text-align:right;font-size:.7rem;color:#7a8a84;margin-top:2px}
+.msg table{width:100%;border-collapse:collapse;font-size:.85rem;margin:4px 0}
+.msg td{padding:3px 4px;border-bottom:1px dashed #d6dcd8}
+.msg td:last-child{text-align:right;font-family:"JetBrains Mono",monospace;white-space:nowrap}
+.steps4{display:grid;gap:12px;padding:0;margin:0;list-style:none;counter-reset:s}
+.steps4 li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 16px 16px 62px;position:relative}
+.steps4 li::before{content:counter(s);position:absolute;left:16px;top:16px;width:32px;height:32px;border-radius:10px;background:var(--acc);color:var(--acc-ink);display:grid;place-items:center;font-family:"JetBrains Mono",monospace;font-weight:600}
+.steps4 b{display:block}
+.steps4 span{color:var(--mute);font-size:.94rem}
+
+/* галерея */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gal figure{margin:0;border-radius:14px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.gal .im{aspect-ratio:4/3;background:var(--bg2)}
+.gal img,.gal .ph{width:100%;height:100%;object-fit:cover;display:block}
+.gal figcaption{padding:9px 12px;font-size:.85rem;color:var(--mute);line-height:1.35}
+.gal figcaption b{display:block;color:var(--ink);font-size:.9rem}
+.gal figure.big{grid-column:1/-1}
+img.ph,div.ph{background:var(--bg2)}
+div.ph svg{width:100%;height:100%;display:block}
+.phs .bg{fill:var(--bg2)}.phs .b{fill:var(--acc)}.phs .w{fill:var(--ink)}.phs .g{fill:var(--card);opacity:.85}
+
+/* этапы */
+.flow{display:grid;gap:12px;padding:0;margin:0;list-style:none}
+.flow li{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:6px}
+.flow .n{font-family:"JetBrains Mono",monospace;color:var(--acc);font-weight:600;font-size:.9rem}
+.flow p{color:var(--mute);font-size:.94rem}
+
+/* отзывы */
+.rv-top{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:20px}
+.rv-top .big{font-family:"JetBrains Mono",monospace;font-size:2.4rem;font-weight:600;line-height:1}
+.stars{color:#e3a008;letter-spacing:2px}
+.rvw blockquote{margin:0;color:var(--ink);font-size:.97rem}
+.rvw .who{display:flex;justify-content:space-between;gap:10px;font-size:.85rem;color:var(--mute);margin-top:auto;padding-top:6px;border-top:1px solid var(--line)}
+.rvw .who b{color:var(--ink)}
+
+/* FAQ */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+.faq summary{cursor:pointer;padding:16px 18px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:"JetBrains Mono",monospace;font-size:1.3rem;color:var(--acc);flex:none}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{padding:0 18px 16px;color:var(--mute)}
+
+/* форма, контакты */
+.zap{display:grid;gap:24px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px}
+.fm{display:grid;gap:14px}
+.fm label{display:grid;gap:6px;font-weight:600;font-size:.92rem}
+.fm input,.fm select,.fm textarea{width:100%;min-height:48px;padding:11px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font:inherit;font-weight:400}
+.fm textarea{min-height:90px;resize:vertical}
+.fm input:focus,.fm select:focus,.fm textarea:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3px rgba(11,125,95,.18)}
+.fm .err{border-color:#b3261e}
+.row2{display:grid;gap:14px}
+.cons{display:flex!important;gap:10px;align-items:flex-start;font-weight:400!important;font-size:.85rem!important;color:var(--mute)}
+.cons input{width:22px;height:22px;min-height:0!important;margin-top:2px;flex:none;accent-color:var(--acc)}
+.cons a{color:var(--acc)}
+.note{font-size:.85rem;color:var(--mute)}
+.zap .side{display:grid;gap:12px;align-content:start}
+.zap .side div{background:var(--bg2);border-radius:14px;padding:14px 16px}
+.zap .side b{display:block}
+.zap .side span{color:var(--mute);font-size:.92rem}
+.ct{display:grid;gap:22px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px}
+.ct dl{margin:0}.ct dt{font-weight:700;margin-top:14px}.ct dt:first-child{margin-top:0}.ct dd{margin:2px 0 0;color:var(--mute)}
+.ct dd a{color:var(--ink);font-weight:600}
+.ct iframe{width:100%;height:100%;min-height:300px;border:0;border-radius:14px;background:var(--bg2)}
+
+/* подвал и плавающие */
+footer{border-top:1px solid var(--line);padding:30px 0 96px;color:var(--mute);font-size:.9rem;text-align:center}
+footer .wr{display:grid;gap:6px}
+footer .made{display:inline-block;margin-top:8px;color:var(--mute);text-decoration:none;border-bottom:1px solid var(--line)}
+footer .made:hover{color:var(--acc)}
+.float{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:10px;z-index:45}
+.fl{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none;box-shadow:0 8px 20px rgba(20,32,28,.28);transition:transform .2s}
+.fl:hover{transform:scale(1.07)}
+.fl.wa{background:var(--wa)}.fl.tg{background:var(--tg)}.fl.call{background:var(--acc)}
+.toast{position:fixed;left:50%;bottom:76px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:12px;font-size:.92rem;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:60;max-width:90vw;text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+html.js .rv{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+html.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none;transition:none}.btn,.fl,.toast{transition:none}.btn:hover,.fl:hover{transform:none}}
+
+@media(min-width:600px){.cards.c2,.cards.c3{grid-template-columns:1fr 1fr}.row2{grid-template-columns:1fr 1fr}.gal{grid-template-columns:repeat(3,1fr)}.gal figure.big{grid-column:span 2;grid-row:span 2}.gal figure.big .im{aspect-ratio:auto;height:calc(100% - 52px)}.flow{grid-template-columns:1fr 1fr}.chk{grid-template-columns:1fr 1fr}}
+@media(min-width:768px) and (max-width:1099px){.chk{grid-template-columns:1fr}}
+@media(min-width:768px){.sec{padding:72px 0}.hero{padding:44px 0 64px}.hero .wr{grid-template-columns:1.05fr .95fr;gap:44px}.nums{grid-template-columns:repeat(4,1fr)}.ct,.zap{grid-template-columns:1fr 1fr;padding:30px;gap:30px}.cards.c3{grid-template-columns:repeat(3,1fr)}.calc{grid-template-columns:1.5fr 1fr;padding:30px}.rep{grid-template-columns:1fr 1fr;gap:40px}.zap{grid-template-columns:1.4fr 1fr}}
+@media(min-width:1000px){.menu{display:flex}.burger,.mm{display:none!important}.tel{margin-left:8px}.flow{grid-template-columns:repeat(5,1fr)}}
+@media(min-width:1200px){.sec{padding:88px 0}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wr">
+    <a class="logo" href="#top" aria-label="Светлый Бокс — на главную"><i><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg></i>Светлый Бокс</a>
+    <nav class="menu" aria-label="Разделы">
+      <a href="#pakety">Пакеты</a><a href="#ceny">Цены</a><a href="#kalkulyator">Расчёт ТО</a><a href="#otchet">Фотоотчёт</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a>
+    </nav>
+    <a class="tel mono" href="tel:+77777777777">+7-777-777-77-77<small>ежедневно 9:00–20:00</small></a>
+    <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <nav class="mm" id="mm" aria-label="Разделы">
+    <a href="#pakety">Пакеты с ценой</a><a href="#ceny">Цены на работы</a><a href="#kalkulyator">Расчёт ТО</a><a href="#otchet">Фотоотчёт</a><a href="#raboty">Наш бокс</a><a href="#otzyvy">Отзывы</a><a href="#faq">Вопросы</a><a href="#zapis">Запись</a><a href="#kontakty">Контакты</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="wr">
+    <div>
+      <span class="open" data-open>Открыто сейчас</span>
+      <h1>Ремонт с фото и <em>ценой до начала работ</em></h1>
+      <p class="sub">Пришлём фото неисправности и смету в мессенджер. Ничего не меняем без вашего «да». Готовые пакеты ТО с фиксированной ценой и письменная гарантия 12 месяцев.</p>
+      <div class="btns">
+        <a class="btn" href="#zapis"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Записаться онлайн</a>
+        <a class="btn wa" data-wa="Здравствуйте! Хочу записаться в автосервис." href="https://wa.me/77777777777" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>WhatsApp</a>
+        <a class="btn tg" href="https://t.me/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>Telegram</a>
+      </div>
+      <div class="chips"><span>Ответ в мессенджере за 15 минут</span><span>Старые детали отдаём</span><span>Кофе и Wi-Fi в зоне ожидания</span></div>
+    </div>
+    <div class="pic"><img class="ph" src="img/1727893119356.jpg" width="1000" height="800" alt="Светлый просторный цех автосервиса с подъёмниками" fetchpriority="high" decoding="async">
+      <div class="bd3"><b>★ 4,9</b> · 312 оценок в 2ГИС</div>
+      <div class="bd2">Гарантия<b>12 мес / 20 000 км</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="pochemu" aria-labelledby="h-why">
+  <div class="wr">
+    <p class="tag">Почему к нам возвращаются</p>
+    <h2 id="h-why">Без сюрпризов в чеке</h2>
+    <p class="lead">Главный страх в автосервисе — «деньги взяли, проблему не нашли» и «насчитали лишнего». Мы построили работу так, чтобы этого не было.</p>
+    <div class="nums">
+      <div class="num rv"><b data-count="12" data-suf=" мес">12 мес</b><span>гарантия на работы</span></div>
+      <div class="num rv"><b data-count="6" data-suf=" постов">6 постов</b><span>свободное окно — в день обращения</span></div>
+      <div class="num rv"><b data-count="15" data-suf=" мин">15 мин</b><span>ответ в мессенджере</span></div>
+      <div class="num rv"><b data-count="0" data-suf=" ₽">0 ₽</b><span>за работы без вашего согласия</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pakety" aria-labelledby="h-pk">
+  <div class="wr">
+    <p class="tag">Готовые пакеты</p>
+    <h2 id="h-pk">Фиксированная цена — работа и расходники</h2>
+    <p class="lead">Цены для легкового автомобиля класса B–C. Для кроссоверов и премиум-марок — в калькуляторе ниже или по запросу.</p>
+    <div class="cards c3">
+      <article class="card pk rv"><span class="bd">Хит</span><h3>ТО-1: масло и фильтры</h3><ul><li>Замена масла (до 4,5 л, синтетика)</li><li>Масляный и воздушный фильтры</li><li>Осмотр по 25 пунктам с фото</li></ul><p class="tm">≈ 1 час</p><div class="pr">5 900 ₽ <span class="old">7 200 ₽</span></div><a class="btn sm" data-wa="Здравствуйте! Хочу записаться на пакет «ТО-1: масло и фильтры» (5 900 ₽)." href="https://wa.me/77777777777" target="_blank" rel="noopener">Записаться</a></article>
+      <article class="card pk rv"><span class="bd new">Сезон</span><h3>Подготовка к зиме</h3><ul><li>Проверка АКБ под нагрузкой</li><li>Антифриз: плотность и уровень</li><li>Свечи, ремни, щётки, омывайка −30 °С</li></ul><p class="tm">≈ 1,5 часа</p><div class="pr">2 900 ₽ <small>работа</small></div><a class="btn sm" data-wa="Здравствуйте! Хочу записаться на «Подготовку к зиме» (2 900 ₽)." href="https://wa.me/77777777777" target="_blank" rel="noopener">Записаться</a></article>
+      <article class="card pk rv"><h3>Проверка перед покупкой</h3><ul><li>Компьютерная диагностика всех блоков</li><li>Толщиномер по кузову, осмотр на подъёмнике</li><li>Отчёт с фото — до встречи с продавцом</li></ul><p class="tm">≈ 1,5 часа</p><div class="pr">3 500 ₽</div><a class="btn sm" data-wa="Здравствуйте! Нужна проверка авто перед покупкой (3 500 ₽)." href="https://wa.me/77777777777" target="_blank" rel="noopener">Записаться</a></article>
+      <article class="card pk rv"><h3>Тормоза «под ключ»</h3><ul><li>Колодки на одну ось (запчасти — ваши или наши)</li><li>Чистка и смазка направляющих</li><li>Замер дисков, фото до и после</li></ul><p class="tm">≈ 1 час</p><div class="pr">2 400 ₽ <small>работа</small></div><a class="btn sm" data-wa="Здравствуйте! Хочу заменить тормозные колодки (пакет 2 400 ₽)." href="https://wa.me/77777777777" target="_blank" rel="noopener">Записаться</a></article>
+      <article class="card pk rv"><span class="bd sale">−20%</span><h3>Ходовая + развал</h3><ul><li>Осмотр подвески на подъёмнике</li><li>Развал-схождение на 3D-стенде</li><li>Распечатка «до» и «после»</li></ul><p class="tm">≈ 1 час</p><div class="pr">2 900 ₽ <span class="old">3 600 ₽</span></div><a class="btn sm" data-wa="Здравствуйте! Хочу пакет «Ходовая + развал» (2 900 ₽)." href="https://wa.me/77777777777" target="_blank" rel="noopener">Записаться</a></article>
+      <article class="card pk rv"><h3>Кондиционер</h3><ul><li>Проверка на утечки</li><li>Заправка (хладагент по факту)</li><li>Антибактериальная обработка салона</li></ul><p class="tm">≈ 40 минут</p><div class="pr">2 600 ₽ <small>+ хладагент</small></div><a class="btn sm" data-wa="Здравствуйте! Хочу обслужить кондиционер (2 600 ₽ + хладагент)." href="https://wa.me/77777777777" target="_blank" rel="noopener">Записаться</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="ceny" aria-labelledby="h-ceny">
+  <div class="wr">
+    <p class="tag">Прайс</p>
+    <h2 id="h-ceny">Цены на работы</h2>
+    <p class="lead">Нормо-час — 2 200 ₽. Итоговую сумму назовём после диагностики и до начала ремонта.</p>
+    <div class="tabs" role="tablist" aria-label="Разделы прайса" data-no-hs>
+      <button type="button" role="tab" aria-selected="true" data-tab="dv">Двигатель</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="hd">Ходовая</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="tr">Тормоза</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="el">Электрика</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="dg">Диагностика</button>
+    </div>
+    <div class="price" role="tabpanel">
+      <table>
+        <tbody data-p="dv"><tr><td>Замена ремня ГРМ с роликами<small>рядный 4-цилиндровый</small></td><td>от 4 500 ₽</td></tr><tr><td>Замена свечей зажигания</td><td>от 900 ₽</td></tr><tr><td>Промывка форсунок на стенде<small>4 шт.</small></td><td>от 2 400 ₽</td></tr><tr><td>Замена прокладки клапанной крышки</td><td>от 1 800 ₽</td></tr><tr><td>Замена помпы</td><td>от 3 200 ₽</td></tr></tbody>
+        <tbody data-p="hd" hidden><tr><td>Замена амортизатора<small>за 1 шт.</small></td><td>от 2 200 ₽</td></tr><tr><td>Замена рычага подвески</td><td>от 1 600 ₽</td></tr><tr><td>Замена ступичного подшипника</td><td>от 2 500 ₽</td></tr><tr><td>Замена шаровой опоры</td><td>от 1 200 ₽</td></tr><tr><td>Развал-схождение 3D<small>легковой / кроссовер</small></td><td>от 2 200 ₽</td></tr></tbody>
+        <tbody data-p="tr" hidden><tr><td>Замена колодок<small>на одну ось</small></td><td>от 1 500 ₽</td></tr><tr><td>Замена дисков и колодок<small>на одну ось</small></td><td>от 2 800 ₽</td></tr><tr><td>Прокачка тормозной системы</td><td>от 1 400 ₽</td></tr><tr><td>Ремонт суппорта</td><td>от 2 000 ₽</td></tr></tbody>
+        <tbody data-p="el" hidden><tr><td>Поиск утечки тока</td><td>от 1 800 ₽</td></tr><tr><td>Замена стартера</td><td>от 1 900 ₽</td></tr><tr><td>Замена генератора</td><td>от 2 400 ₽</td></tr><tr><td>Замена АКБ<small>с сохранением настроек</small></td><td>от 500 ₽</td></tr></tbody>
+        <tbody data-p="dg" hidden><tr><td>Компьютерная диагностика</td><td>от 800 ₽</td></tr><tr><td>Комплексная диагностика с фотоотчётом</td><td>от 1 900 ₽</td></tr><tr><td>Диагностика подвески на подъёмнике</td><td>бесплатно<small>при ремонте у нас</small></td></tr><tr><td>Эндоскопия цилиндров</td><td>от 1 500 ₽</td></tr></tbody>
+      </table>
+    </div>
+    <div class="btns" style="margin-top:22px">
+      <a class="btn wa" data-wa="Здравствуйте! Подскажите стоимость ремонта. Марка, модель, год: " href="https://wa.me/77777777777" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Узнать цену для своего авто</a>
+      <a class="btn tg" href="https://t.me/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>Написать в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="kalkulyator" aria-labelledby="h-calc">
+  <div class="wr">
+    <p class="tag">Калькулятор</p>
+    <h2 id="h-calc">Сколько будет стоить ТО</h2>
+    <p class="lead">Выберите класс автомобиля и работы — сумма посчитается сразу. Отправьте расчёт в WhatsApp, и мы подтвердим цену и время.</p>
+    <form class="calc" id="calc">
+      <div>
+        <b>Автомобиль</b>
+        <div class="seg">
+          <label><input type="radio" name="cls" value="1" data-n="Легковой B–C" checked><span>Легковой B–C</span></label>
+          <label><input type="radio" name="cls" value="1.2" data-n="Кроссовер / D-класс"><span>Кроссовер / D</span></label>
+          <label><input type="radio" name="cls" value="1.45" data-n="Премиум / внедорожник"><span>Премиум / внедорожник</span></label>
+        </div>
+        <b>Работы</b>
+        <div class="chk" style="margin-top:8px">
+          <label><input type="checkbox" value="3200" data-n="Замена масла и масляного фильтра" checked>Масло и фильтр<b>3 200 ₽</b></label>
+          <label><input type="checkbox" value="900" data-n="Воздушный фильтр">Воздушный фильтр<b>900 ₽</b></label>
+          <label><input type="checkbox" value="1100" data-n="Салонный фильтр">Салонный фильтр<b>1 100 ₽</b></label>
+          <label><input type="checkbox" value="2400" data-n="Свечи зажигания">Свечи зажигания<b>2 400 ₽</b></label>
+          <label><input type="checkbox" value="2800" data-n="Тормозная жидкость">Тормозная жидкость<b>2 800 ₽</b></label>
+          <label><input type="checkbox" value="2200" data-n="Развал-схождение">Развал-схождение<b>2 200 ₽</b></label>
+          <label><input type="checkbox" value="800" data-n="Компьютерная диагностика">Диагностика<b>800 ₽</b></label>
+          <label><input type="checkbox" value="0" data-n="Осмотр по 25 пунктам с фото" checked disabled>Осмотр с фото<b>0 ₽</b></label>
+        </div>
+      </div>
+      <div class="sum" aria-live="polite">
+        <span class="note">Примерная стоимость с расходниками</span>
+        <div class="total" id="total">3 200 ₽</div>
+        <ul id="sel"></ul>
+        <a class="btn wa" id="calcWa" href="https://wa.me/77777777777" target="_blank" rel="noopener">Отправить расчёт</a>
+        <span class="note">Точную цену подтвердим после того, как узнаем марку и модель.</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="sec alt" id="otchet" aria-labelledby="h-rep">
+  <div class="wr">
+    <div class="rep">
+      <div>
+        <p class="tag">Диагностика на виду</p>
+        <h2 id="h-rep">Вы видите то же, что и мастер</h2>
+        <p class="lead">Пока машина на подъёмнике, мы присылаем фото неисправного узла и смету по позициям. Решаете вы — меняем сейчас, позже или не меняем вовсе.</p>
+        <ol class="steps4">
+          <li><b>Осмотр и фото</b><span>Снимаем каждую найденную проблему крупным планом.</span></li>
+          <li><b>Смета в мессенджер</b><span>Работа и запчасти отдельными строками, с ценой.</span></li>
+          <li><b>Ваше «да»</b><span>Без подтверждения ничего не делаем — даже мелочь.</span></li>
+          <li><b>Фото «после» и старые детали</b><span>Покажем результат и отдадим снятые запчасти.</span></li>
+        </ol>
+      </div>
+      <div class="chat rv" aria-label="Пример фотоотчёта в мессенджере">
+        <div class="msg"><img class="ph" src="img/1760836395763.jpg" width="700" height="525" alt="Фото изношенной стойки подвески из отчёта мастера" loading="lazy" decoding="async"><p>Передняя левая стойка течёт, пыльник порван. Правая в норме — фото ниже в альбоме.</p><span class="t">11:42</span></div>
+        <div class="msg"><p><b>Смета</b></p><table><tr><td>Стойка (Kayaba)</td><td>6 400 ₽</td></tr><tr><td>Пыльник + отбойник</td><td>1 100 ₽</td></tr><tr><td>Работа</td><td>2 200 ₽</td></tr><tr><td><b>Итого</b></td><td><b>9 700 ₽</b></td></tr></table><p>Можно сегодня до 16:00.</p><span class="t">11:43</span></div>
+        <div class="msg me">Да, делайте, спасибо за фото<span class="t">11:50 ✓✓</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="raboty" aria-labelledby="h-foto">
+  <div class="wr">
+    <p class="tag">Наш бокс</p>
+    <h2 id="h-foto">Светлый цех, всё на виду</h2>
+    <p class="lead">Можно стоять рядом с мастером или ждать в зоне отдыха с кофе — как вам удобнее.</p>
+    <div class="gal">
+      <figure class="big rv"><div class="im"><img class="ph" src="img/1771340012319.jpg" width="1000" height="750" alt="Мастер осматривает седан на подъёмнике" loading="lazy" decoding="async"></div><figcaption><b>Подъёмник и осмотр</b>Смотрим снизу и показываем вам</figcaption></figure>
+      <figure class="rv"><div class="im"><img class="ph" src="img/1615906655593.jpg" width="700" height="525" alt="Мастер над моторным отсеком" loading="lazy" decoding="async"></div><figcaption><b>Двигатель</b>Диагностика без спешки</figcaption></figure>
+      <figure class="rv"><div class="im"><img class="ph" src="img/1760317890322.jpg" width="700" height="525" alt="Тормозной диск и суппорт" loading="lazy" decoding="async"></div><figcaption><b>Тормоза</b>Замеры диска и колодок</figcaption></figure>
+      <figure class="rv"><div class="im"><img class="ph" src="img/1487754180451.jpg" width="700" height="525" alt="Заливка масла в двигатель" loading="lazy" decoding="async"></div><figcaption><b>ТО и масло</b>Масло по допуску вашего авто</figcaption></figure>
+      <figure class="rv"><div class="im"><img class="ph" src="img/1760836395763.jpg" width="700" height="525" alt="Пружинные стойки подвески" loading="lazy" decoding="async"></div><figcaption><b>Подвеска</b>Показываем изношенные узлы</figcaption></figure>
+      <figure class="rv"><div class="im"><img class="ph" src="img/1727893119356.jpg" width="700" height="525" alt="Общий вид цеха с подъёмниками" loading="lazy" decoding="async"></div><figcaption><b>6 постов</b>Окно — обычно в день обращения</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="etapy" aria-labelledby="h-flow">
+  <div class="wr">
+    <p class="tag">Как работаем</p>
+    <h2 id="h-flow">От заявки до выдачи</h2>
+    <ol class="flow">
+      <li class="rv"><span class="n">01</span><b>Заявка</b><p>Онлайн, в WhatsApp или по телефону. Подберём ближайшее окно.</p></li>
+      <li class="rv"><span class="n">02</span><b>Приёмка</b><p>Осмотр при вас, фиксируем пробег и состояние в заказ-наряде.</p></li>
+      <li class="rv"><span class="n">03</span><b>Фото и смета</b><p>Присылаем в мессенджер, ждём вашего подтверждения.</p></li>
+      <li class="rv"><span class="n">04</span><b>Ремонт</b><p>Только согласованные работы. Запчасти — ваши или наши.</p></li>
+      <li class="rv"><span class="n">05</span><b>Выдача</b><p>Тест-драйв, старые детали, гарантия в заказ-наряде.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="otzyvy" aria-labelledby="h-rv">
+  <div class="wr">
+    <p class="tag">Отзывы</p>
+    <h2 id="h-rv">Что говорят клиенты</h2>
+    <div class="rv-top"><span class="big">4,9</span><div><div class="stars" aria-label="Рейтинг 4,9 из 5">★★★★★</div><span class="note">312 оценок в 2ГИС и Яндекс Картах</span></div></div>
+    <div class="cards c3">
+      <article class="card rvw rv"><div class="stars" aria-label="5 из 5">★★★★★</div><blockquote>«Прислали фото стойки прямо с подъёмника и смету. Первый сервис, где я понимаю, за что плачу.»</blockquote><div class="who"><b>Андрей, Kia Rio</b><span>2ГИС</span></div></article>
+      <article class="card rvw rv"><div class="stars" aria-label="5 из 5">★★★★★</div><blockquote>«Проверяли машину перед покупкой — нашли подкрашенное крыло и ошибки по АКПП. Сэкономили мне кучу денег.»</blockquote><div class="who"><b>Марина, Hyundai Creta</b><span>Яндекс</span></div></article>
+      <article class="card rvw rv"><div class="stars" aria-label="5 из 5">★★★★★</div><blockquote>«Записался через сайт на утро, к обеду забрал. Цена совпала с калькулятором, старые колодки отдали.»</blockquote><div class="who"><b>Игорь, Skoda Octavia</b><span>2ГИС</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt faq" id="faq" aria-labelledby="h-faq">
+  <div class="wr">
+    <p class="tag">Вопросы</p>
+    <h2 id="h-faq">Частые вопросы</h2>
+    <details><summary>Можно приехать со своими запчастями?</summary><p>Да. Гарантия на работу сохраняется, на саму деталь — у продавца. Если деталь окажется неподходящей, скажем до установки.</p></details>
+    <details><summary>Сколько ждать свободного окна?</summary><p>Обычно в день обращения или на следующий: у нас 6 постов. Точное время подтвердим в мессенджере.</p></details>
+    <details><summary>А если в смете будет не то, что я ожидал?</summary><p>Вы можете отказаться от любой позиции. Платите только за диагностику и те работы, которые подтвердили.</p></details>
+    <details><summary>Сохранится ли гарантия дилера после ТО у вас?</summary><p>Да, если ТО выполнено по регламенту производителя с оригинальными или сертифицированными расходниками. Делаем запись в сервисной книжке.</p></details>
+    <details><summary>Как оплатить?</summary><p>Картой, наличными, по QR-коду или безналом для юрлиц. Чек и заказ-наряд выдаём всегда.</p></details>
+    <details><summary>Можно подождать в сервисе?</summary><p>Да, есть зона отдыха с кофе и Wi-Fi. Можно также стоять рядом с мастером и смотреть.</p></details>
+  </div>
+</section>
+
+<section class="sec" id="zapis" aria-labelledby="h-zap">
+  <div class="wr">
+    <div class="zap">
+      <div>
+        <p class="tag">Онлайн-запись</p>
+        <h2 id="h-zap">Записаться на удобное время</h2>
+        <p class="lead">Заявка откроется в WhatsApp с готовым текстом — останется нажать «отправить».</p>
+        <form class="fm" id="form" novalidate>
+          <div class="row2">
+            <label>Имя<input name="name" autocomplete="given-name" required></label>
+            <label>Телефон<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7" required></label>
+          </div>
+          <div class="row2">
+            <label>Автомобиль<input name="car" placeholder="Марка, модель, год"></label>
+            <label>Когда удобно<input name="date" type="date"></label>
+          </div>
+          <label>Что нужно сделать<select name="svc"><option>ТО-1: масло и фильтры</option><option>Подготовка к зиме</option><option>Проверка перед покупкой</option><option>Тормоза</option><option>Ходовая и развал</option><option>Кондиционер</option><option>Диагностика / не знаю, что сломалось</option></select></label>
+          <label>Комментарий<textarea name="msg" placeholder="Что беспокоит: стук, ошибка на панели, запах…"></textarea></label>
+          <label class="cons"><input type="checkbox" name="ok" required>Согласен на обработку персональных данных по <a href="#" data-policy>политике конфиденциальности</a></label>
+          <div class="btns"><button class="btn wa" type="submit">Отправить в WhatsApp</button><a class="btn tg" href="https://t.me/" target="_blank" rel="noopener">Или в Telegram</a></div>
+        </form>
+      </div>
+      <div class="side">
+        <div><b>Перезвоним за 15 минут</b><span>В рабочее время с 9:00 до 20:00</span></div>
+        <div><b>Диагностика подвески — бесплатно</b><span>Если ремонт делаем у нас</span></div>
+        <div><b>Старые детали — вам</b><span>Отдаём в пакете при выдаче</span></div>
+        <div><b>Гарантия 12 мес / 20 000 км</b><span>Прописана в заказ-наряде</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="kontakty" aria-labelledby="h-ct">
+  <div class="wr">
+    <div class="ct">
+      <div>
+        <p class="tag">Контакты</p>
+        <h2 id="h-ct">Приезжайте или напишите</h2>
+        <span class="open" data-open>Открыто сейчас</span>
+        <dl>
+          <dt>Адрес</dt><dd>Челябинск, ул. Примерная, 12 (образец), въезд со двора</dd>
+          <dt>Телефон</dt><dd><a class="mono" href="tel:+77777777777">+7-777-777-77-77</a></dd>
+          <dt>Режим работы</dt><dd>Ежедневно с 9:00 до 20:00, без выходных</dd>
+          <dt>Мессенджеры</dt><dd><a href="https://wa.me/77777777777" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a></dd>
+        </dl>
+        <div class="btns" style="margin-top:22px">
+          <a class="btn" href="tel:+77777777777">Позвонить</a>
+          <a class="btn line" href="https://yandex.ru/maps/?text=%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%2C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81" target="_blank" rel="noopener">Открыть на карте</a>
+        </div>
+      </div>
+      <iframe title="Карта проезда" src="https://yandex.ru/map-widget/v1/?ll=61.402554%2C55.159897&amp;z=11" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wr">
+    <div>© Светлый Бокс · автосервис</div>
+    <div>Все данные на сайте — образец, цены и отзывы демонстрационные. Фото: Unsplash.</div>
+    <div><a class="made" href="https://saitnazakaz.site/" target="_blank" rel="noopener">Сайт сделан в HTML_SAIT</a></div>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="fl wa" href="https://wa.me/77777777777" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+  <a class="fl tg" href="https://t.me/" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></a>
+  <a class="fl call" href="tel:+77777777777" aria-label="Позвонить"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+'use strict';
+var PHONE='77777777777';
+var $=function(s,r){return (r||document).querySelector(s)};
+var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var reduce=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
+document.documentElement.classList.add('js');
+function wa(t){return 'https://wa.me/'+PHONE+'?text='+encodeURIComponent(t)}
+function fmt(n){return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,' ')}
+function toast(t){var el=$('#toast');el.textContent=t;el.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(function(){el.classList.remove('on')},2400)}
+
+/* ссылки WhatsApp с готовым текстом */
+$$('[data-wa]').forEach(function(a){a.href=wa(a.getAttribute('data-wa'))});
+
+/* фото: если не загрузилось - иллюстрация */
+var PH='<svg viewBox="0 0 400 300" class="phs" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Иллюстрация: автомобиль"><rect class="bg" width="400" height="300"/><rect class="g" x="0" y="214" width="400" height="86"/><path class="b" d="M70 196c0-20 10-30 28-34l40-46c8-9 18-14 32-14h62c14 0 24 5 33 14l34 40c20 3 40 8 40 36v10H70z"/><circle class="w" cx="140" cy="206" r="26"/><circle class="w" cx="296" cy="206" r="26"/><circle class="g" cx="140" cy="206" r="11"/><circle class="g" cx="296" cy="206" r="11"/></svg>';
+function phFail(im){if(!im.parentNode)return;var d=document.createElement('div');d.className='ph';d.innerHTML=PH;im.parentNode.replaceChild(d,im)}
+document.addEventListener('error',function(e){var t=e.target;if(t&&t.tagName==='IMG'&&t.classList.contains('ph'))phFail(t)},true);
+
+/* открыто сейчас: 9:00-20:00 по Москве */
+function nowMin(){try{var h=0,m=0;new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()).forEach(function(x){if(x.type==='hour')h=(+x.value)%24;if(x.type==='minute')m=+x.value});return h*60+m}catch(e){var d=new Date();return d.getHours()*60+d.getMinutes()}}
+function openNow(){var t=nowMin(),on=t>=540&&t<1200;$$('[data-open]').forEach(function(el){el.classList.toggle('on',on);el.textContent=on?'Открыто сейчас · до 20:00':(t<540?'Сейчас закрыто · откроемся в 9:00':'Сейчас закрыто · откроемся завтра в 9:00')})}
+openNow();setInterval(openNow,60000);
+
+/* счётчики и появление */
+function runCount(el){var to=+el.dataset.count,suf=el.dataset.suf||'',dur=1100,t0=null;if(reduce){el.textContent=fmt(to)+suf;return}function st(ts){if(t0===null)t0=ts;var p=Math.min(1,(ts-t0)/dur),e=1-Math.pow(1-p,3);el.textContent=fmt(to*e)+suf;if(p<1)requestAnimationFrame(st)}requestAnimationFrame(st)}
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');if(e.target.hasAttribute('data-count'))runCount(e.target);io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px'});
+  $$('.rv,[data-count]').forEach(function(el){io.observe(el)});
+}else{$$('.rv').forEach(function(el){el.classList.add('in')})}
+
+/* меню */
+var bg=$('.burger'),mm=$('.mm');
+bg.addEventListener('click',function(){var o=mm.classList.toggle('on');bg.setAttribute('aria-expanded',o?'true':'false')});
+mm.addEventListener('click',function(e){if(e.target.tagName==='A'){mm.classList.remove('on');bg.setAttribute('aria-expanded','false')}});
+
+/* вкладки прайса */
+var tabs=$$('.tabs button');
+tabs.forEach(function(b){b.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false')});$$('.price tbody').forEach(function(tb){tb.hidden=tb.getAttribute('data-p')!==b.getAttribute('data-tab')})})});
+
+/* калькулятор ТО */
+var calc=$('#calc');
+function recalc(){var k=+(calc.querySelector('input[name=cls]:checked').value),cls=calc.querySelector('input[name=cls]:checked').getAttribute('data-n'),sum=0,items=[];
+  $$('.chk input',calc).forEach(function(c){if(c.checked){var v=Math.round(+c.value*k/100)*100;sum+=v;items.push(c.getAttribute('data-n')+(v?' — '+fmt(v)+' ₽':''))}});
+  $('#total').textContent=fmt(sum)+' ₽';
+  $('#sel').innerHTML=items.map(function(i){return '<li>'+i+'</li>'}).join('');
+  $('#calcWa').href=wa('Здравствуйте! Посчитал ТО на сайте.\nАвтомобиль: '+cls+'\n'+items.join('\n')+'\nИтого примерно: '+fmt(sum)+' ₽\nМарка и модель: ');
+}
+calc.addEventListener('change',recalc);calc.addEventListener('submit',function(e){e.preventDefault()});recalc();
+
+/* форма записи */
+var f=$('#form');
+f.addEventListener('submit',function(e){e.preventDefault();var ok=true;
+  ['name','phone'].forEach(function(n){var i=f.elements[n],bad=n==='phone'?i.value.replace(/\D/g,'').length<10:!i.value.trim();i.classList.toggle('err',bad);if(bad)ok=false});
+  if(!f.elements.ok.checked){toast('Отметьте согласие на обработку данных');return}
+  if(!ok){toast('Заполните имя и телефон');return}
+  var d=f.elements.date.value?f.elements.date.value.split('-').reverse().join('.'):'по согласованию';
+  var t='Здравствуйте! Запись в автосервис.\nИмя: '+f.elements.name.value.trim()+'\nТелефон: '+f.elements.phone.value.trim()+'\nАвто: '+(f.elements.car.value.trim()||'—')+'\nУслуга: '+f.elements.svc.value+'\nКогда: '+d+(f.elements.msg.value.trim()?'\nКомментарий: '+f.elements.msg.value.trim():'');
+  window.open(wa(t),'_blank','noopener');toast('Открываем WhatsApp…');
+});
+$$('[data-policy]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();toast('Политика конфиденциальности — на сайте клиента')})});
+})();
+</script>
+</body>
+</html>
